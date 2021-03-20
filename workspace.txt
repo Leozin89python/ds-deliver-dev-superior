@@ -1,0 +1,4 @@
+a pasta ws-sds2 será meu workspace
+e a pasta desdeliver a pasta do 
+projeto, no caso a que será referencia-
+da para deploy no heroku.
