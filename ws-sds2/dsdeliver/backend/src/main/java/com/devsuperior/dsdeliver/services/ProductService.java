@@ -18,9 +18,9 @@ public class ProductService {
 	
 	@Autowired
 	private ProductRepository repository;
-
+	@Transactional /* não está aceitando o agumento (readOnly = true) */
 	public List<ProductDTO> findAll(){
-		List<Product> list = repository.findAll();
+		List<Product> list = repository.findAllByOrderByNameAsc();
 		return list.stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
 	}
 }
